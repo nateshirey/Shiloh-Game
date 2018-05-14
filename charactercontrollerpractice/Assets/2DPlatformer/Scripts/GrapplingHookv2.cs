@@ -28,22 +28,36 @@ public class GrapplingHookv2 : MonoBehaviour
 
 		hookLocation = hook.transform.position;
 
-		if (Input.GetKey("e") && inRange == true)
-		{
+        if (Input.GetKey("e") && inRange == true)
+        {
+          
+            sendHook();
+        
+        }
 
-			hook.transform.position = Vector2.MoveTowards(hookLocation, target, hookSpeed * Time.deltaTime);
-			Debug.Log(hookLocation);
+        else if (hookLocation != this.transform.position)
+        {
 
-		}
+            returnHook();
 
+        }
 
 	}
  
 	void sendHook()
 	{
 
-			
+           hook.transform.position = Vector2.MoveTowards(hookLocation, target, hookSpeed * Time.deltaTime);
+           Debug.Log(hookLocation);
+
 	}
+
+    void returnHook()
+    {
+
+        hook.transform.position = Vector2.MoveTowards(hookLocation, this.transform.position, hookSpeed * Time.deltaTime);
+
+    }
 
 	void OnTriggerStay2D(Collider2D col)
 	{

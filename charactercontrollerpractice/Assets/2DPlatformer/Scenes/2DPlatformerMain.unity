@@ -24054,10 +24054,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306944142f38844128daab6e9fcee5f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityModifier: 2
+  gravityModifier: 1.5
   minGroundNormalY: 0.65
   maxSpeed: 7
   jumpTakeOffSpeed: 7
+  swingSpeed: 1
+  hook: {fileID: 864022011}
+  hookSpeed: 20
 --- !u!232 &727076214
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -24202,13 +24205,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 727076212}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa5ebb7571de84027967b64728829311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hook: {fileID: 864022011}
-  hookSpeed: 5
+  hookSpeed: 20
 --- !u!1 &727542788
 GameObject:
   m_ObjectHideFlags: 0
@@ -27258,6 +27261,11 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58110573974348770, guid: af050246b87474f04b0d8e7fc4d0ad1f,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af050246b87474f04b0d8e7fc4d0ad1f, type: 2}
@@ -54676,7 +54684,7 @@ Prefab:
     - target: {fileID: 20134372339604138, guid: 0f387d2a5577afa47b4f87e4e846f091,
         type: 2}
       propertyPath: orthographic size
-      value: 4.75
+      value: 3.2578125
       objectReference: {fileID: 0}
     - target: {fileID: 114123390247084860, guid: 0f387d2a5577afa47b4f87e4e846f091,
         type: 2}
