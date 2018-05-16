@@ -5719,11 +5719,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
   m_IsPrefabParent: 0
---- !u!50 &202284950 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 50214110263617082, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee,
-    type: 2}
-  m_PrefabInternal: {fileID: 202284949}
 --- !u!1 &202612206
 GameObject:
   m_ObjectHideFlags: 0
@@ -24059,8 +24054,6 @@ MonoBehaviour:
   maxSpeed: 7
   jumpTakeOffSpeed: 7
   swingSpeed: 1
-  hook: {fileID: 864022011}
-  hookSpeed: 20
 --- !u!232 &727076214
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -24069,16 +24062,16 @@ DistanceJoint2D:
   m_GameObject: {fileID: 727076212}
   m_Enabled: 0
   serializedVersion: 4
-  m_EnableCollision: 1
-  m_ConnectedRigidBody: {fileID: 202284950}
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 0
-  m_Distance: 10
-  m_MaxDistanceOnly: 1
+  m_AutoConfigureDistance: 1
+  m_Distance: 8.783399
+  m_MaxDistanceOnly: 0
 --- !u!70 &727076215
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -24205,7 +24198,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 727076212}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa5ebb7571de84027967b64728829311, type: 3}
   m_Name: 
