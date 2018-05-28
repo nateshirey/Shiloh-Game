@@ -7,7 +7,7 @@ public class PlayerPlatformerController : PhysicsObject
 
     public float maxSpeed = 7;
     public float jumpTakeOffSpeed = 7;
-
+    [SerializeField] private GameObject character;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 

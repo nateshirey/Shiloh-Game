@@ -70,7 +70,7 @@ public class PhysicsObject : MonoBehaviour {
 		Movement(move, false);
 
 		move = Vector2.up * deltaPosition.y;
-        
+         
 		Movement (move, true);
 	}
     //gravity thing//
